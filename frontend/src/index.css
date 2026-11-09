@@ -1,0 +1,87 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #222;
+  background: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+nav a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 320px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input {
+  padding: 6px 8px;
+  font-size: 1rem;
+}
+
+button {
+  width: fit-content;
+  padding: 6px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.ok {
+  color: #1a7f37;
+}
+
+.error {
+  color: #c62828;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.card {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
