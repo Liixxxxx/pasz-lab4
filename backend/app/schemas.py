@@ -40,9 +40,39 @@ class RegisterIn(BaseModel):
         return v
 
 
+class LoginIn(BaseModel):
+    login: str
+    password: str
+
+
 class MessageOut(BaseModel):
     message: str
 
 
 class ErrorOut(BaseModel):
     detail: str
+
+
+class TokenOut(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class MeOut(BaseModel):
+    id: int
+    login: str
+    clearance: str
+
+
+class ResourceItem(BaseModel):
+    id: int
+    title: str
+    classification: str
+    allowed: bool
+
+
+class ResourceOut(BaseModel):
+    id: int
+    title: str
+    classification: str
+    content: str
