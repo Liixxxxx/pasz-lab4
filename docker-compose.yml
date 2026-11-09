@@ -12,5 +12,14 @@ services:
       timeout: 3s
       retries: 10
 
+  backend:
+    build: ./backend
+    env_file: .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
 volumes:
   pgdata:
